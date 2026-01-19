@@ -27,7 +27,7 @@ jobs:
           node-version: lts/*
           cache: "pnpm"
 
-      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
       - name: Deploy dist to gh-pages
